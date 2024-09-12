@@ -1,0 +1,726 @@
+/* google fonts linking here */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* ************************
+****    Global CSS     ****
+***************************/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    overflow-x: hidden;     
+    color: #526375;
+}
+h1, h3, h4, h5, h6{
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 10px;
+    line-height: 24px;
+    font-weight: 700;
+}
+h1{
+    font-size: 38px;
+}
+h2{
+    font-family: "Raleway", sans-serif;
+    font-size: 36px;
+    font-weight: 400; 
+}
+h3{
+    font-size: 26px;
+}
+h4{
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+}
+h5{
+    font-size: 18px;
+}
+h6{
+    font-size: 16px;
+} 
+p{
+    font-weight: 400;
+    line-height: 26px;
+    font-size: 16px;
+    color: #cccccc;
+}
+ul{
+    list-style: none;
+}
+ul , ol{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    font-weight: 600;
+}
+a:hover {
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.underline{
+    width: 100px;
+    height: 2px;
+    background-color: #ff8b38;
+    margin: 0 auto;
+}
+.heading h2{
+    font-family: "Raleway", sans-serif;
+}
+/* *******************
+HEADER SECTION START
+********************** */
+header{
+    width: 100%;
+}
+.navbar{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    background-color: black;
+}
+.navbar .nav-link{
+    color: white;
+    font-weight: 600;
+    transition: 0.8s;
+}
+.navbar .nav-link:hover{
+    color: #ff8b38;
+    transition: 0.8s;
+}
+.nav-item{
+    margin-left: 25px;
+    position: relative;
+}
+.nav-item .active{
+    color: white !important;
+    transition: 0.8s;
+}
+.nav-item .active:hover{
+    color: #ff8b38 !important;
+    transition: 0.8s;
+}
+.nav-item::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #ff9b51;
+    transition: 0.8s;
+}
+.nav-item:hover::after{
+    width: 100%;
+    transition: 0.8s;
+}
+ /* *******************
+HEADER SECTION END
+********************** */
+
+/* *******************
+HERO SECTION START
+********************** */
+.hero-section{
+    width: 100%;
+    background: url(../images/banner1.png) center center no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.cus-height{
+    height: 100vh;
+}
+.content h1{
+    font-size: 75px;
+    font-weight: 700;
+    color: white;
+}
+.content h1 span{
+    font-size: 75px;
+    font-weight: 300;
+    color: #ff8b38;
+}
+.content h2{
+    padding-top: 30px;
+    color: white;
+    width: 74%;
+    line-height: 40px;
+}
+.content .underline{
+    width: 72px;
+    margin: 0;
+    background-color: white;
+    margin: 25px 0px;
+}
+.content p{
+    color: #a4a5a8;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    width: 68%;
+}
+.btns a{
+    padding: 8px 30px;
+}
+.btns .btn-info{
+    border-radius: 0px;
+    background: transparent;
+    border: 2px solid;
+    color: #f5f5f5;
+    margin-top: 30px;
+    transition: 0.8s;
+}
+.btns .btn-info:hover{
+    color: #ff8b38;
+    transition: 0.8s;
+}
+
+.right-inner{
+    margin-top: 10px;
+}
+.right-inner .card{
+    width: 350px;
+    border: none !important;
+}
+.right-inner .card-body{
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+.right-inner .card-header h3{
+    font-size: 22px;
+    text-align: center;
+    font-weight: 700;
+}
+.right-inner .card-header h3 span{
+    font-size: 22px;
+    color: #ff8b38;
+}
+.right-inner .card-footer{
+    background-color: #ff9b51;
+    transition: 0.8s;
+    text-align: center;
+    padding: 15px 0px;
+}
+.right-inner .card-footer:hover{
+    background-color: #ff8b38;
+    transition: 0.8s;
+    cursor: pointer;
+    text-align: center;
+}
+.right-inner .card-footer .form-control-b{
+    border: none !important;
+    background: transparent;
+    text-align: center;
+    color: white;
+    margin: 0;
+}
+
+.form-control{
+    border: none !important;
+    border-bottom: 1px solid #d6d6d6 !important;
+    border-radius: 0;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+input:focus{
+    box-shadow: #ff8b38 !important;
+}
+
+/* *******************
+HERO SECTION END
+********************** */
+
+/* *******************
+SOCIAL SECTION START
+********************** */
+.social-section{
+    width: 100%;
+    border-bottom: 2px solid #b7b7b7;
+    padding: 15px 0 10px;
+}
+.social-section h4{
+    color: #333333;
+
+}
+.social-section p{
+    width: 87%;
+    color: #86878b;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.social-section .social-icons{
+    padding: 10px;
+    text-align: right;
+}
+.social-section .social-icons ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 50px;
+}
+.social-section .social-icons ul li a i{
+    font-size: 50px;
+    line-height: 65px;
+    color: #cccccc;
+    transition: 0.8s;
+}
+.social-section .social-icons ul li a i:hover{
+    transform: scale(1.2);
+    color: #ff9a52;
+    transition: 0.8s;
+}
+/* *******************
+SOCIAL SECTION END
+********************** */
+
+/* *******************
+TAB SECTION START
+********************** */
+.tab-section{
+    width: 100%;
+    padding: 80px;
+    background-color: #f5f5f5;
+}
+.tab-section h4{
+    color: black;
+    margin-top: 0;
+    margin-bottom: 30px;
+    margin-left: 55px;
+}
+.tab-section p{
+    color: #86878b;
+    width: 77%;
+    margin-left: 55px;  
+}
+button.nav-link{
+    width: 110px !important;
+    font-size: 15px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    background-color: #333333;
+    padding: 40px 0px;
+    transition: 0.8s;
+}
+button.nav-link:hover{
+    color: white;
+    transition: 0.8s;
+    background-color: #171717;
+}
+.tab-1{
+    border-radius: 4px 4px 0 0 !important;
+    border-bottom: 1px solid #f5f5f5;
+}
+.tab-2{
+    border-radius: 0 !important;
+    border-bottom: 1px solid #f5f5f5;
+}
+.tab-3{
+    border-radius: 0 0 4px 4px !important;
+}
+.nav-pills .nav-link.active{
+    background-color: #ff8b38;
+}
+.btns-c .tab-btn{
+    display: inline-block;
+    padding: 8px 22px;
+    margin-top: 15px;
+    background-color: #ff8b38;
+    color: #fff;
+    font-weight: 600;
+    font-size: 15px;
+    border-radius: 4px;
+    transition: 0.8s;
+    margin-left: 55px;
+}
+.btns-c .tab-btn:hover{
+    transition: 0.8s;
+    background-color: #ff9a52;
+    color: white;
+}
+/* *******************
+TAB SECTION END
+********************** */
+
+/* *******************
+SUB-LIST SECTION START
+********************** */
+.sub-list{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: white;
+}
+.sub-list-image img{
+    max-width: 100%;
+}
+.sub-list .heading h3{
+    color: #212121;
+    display: inline-block;
+}
+.sub-list .heading .underline{
+    width: 72px;
+    margin: 0;
+    background-color: #ff8b38;
+    margin: 25px 0px;
+}
+.sub-list .heading p{
+    width: 75%;
+    color: #909090;
+}
+
+.sub-list ul{
+    list-style: none;   
+}
+.sub-list ul li{
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+    text-transform: capitalize;
+}
+.sub-list .l-icon{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    border: 2px solid #ff8b38;
+    border-radius: 50%;
+    color: #ff8b38;
+    font-size: 20px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.8s;
+}
+.sub-list .l-icon:hover{
+    transition-duration: 0.8s;
+    transform: scale(1.2);
+}
+.sub-list .itext{
+    margin-left: 30px;
+}
+.sub-list .itext h4{
+    font-size: 18px;
+}
+.sub-list .itext p{
+    color: #86878b;
+    width: 75%;
+}
+/* *******************
+SUB-LIST SECTION END
+********************** */
+
+/* *******************
+STANDARD PICTURE SECTION START
+********************** */
+.standard-picture-section{
+    width: 100%;
+    padding-top: 80px;
+    background-color: #f5f5f5;
+}
+.standard-picture-section .standard-content h4{
+    margin-top: 35px;
+}
+.standard-picture-section .standard-content p{
+    width: 85%;
+    color: #86878b;
+}
+.standard-picture-section .standard-content .underline{
+    width: 72px;
+    margin: 0;
+    background-color: #ff8b38;
+    margin: 25px 0px;
+}
+/* *******************
+STANDARD PICTURE SECTION END
+********************** */
+
+/* *******************
+AWESOME SECTION START
+********************** */
+.awesome-section{
+    width: 100%;
+    padding: 80px;
+}
+.heading{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.heading h2{
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+.heading p{
+    margin-top: 25px;
+    color: #86878b;
+}
+.feature-content{
+    text-align: center;
+    padding-top: 30px;
+}
+.feature-content i{
+    font-size: 25px;
+    color: #ff8b38;
+    background-color: white !important;
+    width: 70px;
+    height: 70px;
+    border: 2px solid #ff8b38;
+    border-radius: 50%;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    transition: 0.8s;
+}
+.feature-content i:hover{
+    transform: scale(1.1);
+    color: #ff9a52;
+    transition: 0.8s;
+}
+.feature-content .icon h4{
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+.feature-content .icon p{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    color: #86878b;
+}
+/* *******************
+AWESOME SECTION END
+********************** */
+
+/* *******************
+PRICING SECTION START
+********************** */
+.pricing-section{
+    width: 100%;
+    padding: 80px 0;
+    background-color: #f5f5f5;
+}
+.pricing-section .card{
+    border-radius: 0 !important;
+}
+.pricing-section .card-header{
+    background-color: #333333;
+    border-radius: 0 !important;
+    padding: 10px 0 5px;
+    border-bottom: 1px solid white;
+}
+.pricing-section .card-header h3{
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    font-family:'Open Sans', sans-serif;
+}
+.pricing-section .card-body{
+    background-color: #333333;
+    padding-top: 45px;
+    border-bottom: 5px solid #ff8b38;
+}
+.pricing-section .card-body h1{
+    font-size: 94px;
+    font-family: "Raleway";
+    font-weight: 700;
+    color: white;
+    
+}
+.pricing-section .card-body span{
+    font-size: 35px;
+    font-family: "Raleway";
+    font-weight: 700;
+    color: white;
+}
+.pricing-section .card-body p{
+    font-size: 14px;
+    color: white;
+    font-style: italic;
+}
+.pricing-section .card-footer{
+    background-color: white;
+    padding: 0;
+}
+
+
+
+.cus-footer{
+    border: none !important;
+}
+.cus-list{
+    background-color: #ff8b38 !important;
+}
+/* *******************
+PRICING SECTION END
+********************** */
+
+/* *******************
+CUSTOMERS SECTION START
+********************** */
+.customer-section{
+    padding: 80px 0;
+}
+.customer-inner .parent{
+    width: 78%;
+    background-color: #f5f5f5;
+    padding: 20px 20px 10px;
+    position: relative;
+}
+.customer-inner .parent p{
+    color: #949598;
+    font-size: 14px;
+    font-style: italic;
+}
+.customer-inner .child{
+    position: absolute;
+    background-color: #f5f5f5;
+    width: 35px;
+    height: 35px;
+    transform: rotate(45deg);
+    bottom: -11px;
+    left: 27px;
+}
+.customer-inner .intro{
+    margin-top: 30px;
+    display: flex;
+}
+.customer-inner .intro .right{
+    margin-left: 20px;
+}
+.customer-inner .intro .right p{
+    margin-top: -5%;
+    color: #949598;
+    font-size: 14px;
+}
+
+/* *******************
+CUSTOMERS SECTION END
+********************** */
+
+/* *******************
+DESIGN SECTION START
+********************** */
+.design-section{
+    width: 100%;
+    background: url(../images/banner2.png) center center no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    background-color: #333;
+    background-repeat: no-repeat;
+    background-position: center top;
+    position: relative;
+    justify-content: center;
+}
+.design-section .b-test{
+    padding-top: 40px;
+}
+.design-section .b-test h2{
+    color: white;
+    padding-bottom: 15px;
+}
+.design-section .b-test p{
+    color: white !important;
+    padding-top: 20px;
+}
+/* *******************
+DESIGN SECTION END
+********************** */
+
+/* *******************
+CONTACT SECTION START
+********************** */
+.contact-section{
+    padding: 80px 0px;
+    justify-content: center;
+    text-align: center;
+}
+.contact-us-left{
+    padding: 20px;
+    padding-left: 0;
+}
+.contact-us-left input{
+    display: block;
+    width: 100%;
+    padding: 7px 10px;
+    border: none;
+    border-bottom: 1px solid #d6d6d6;
+    margin-bottom: 25px;
+}
+.contact-us-right{
+    padding: 20px;
+    padding-right: 0;
+}
+.contact-us-right textarea{
+    display: block;
+    width: 100%;
+    padding: 7px 10px;
+    border: none;
+    border-bottom: 1px solid #d6d6d6;
+    resize: none;
+    min-height: 158px;
+}
+.btn-submit{
+    padding: 10px 22px;
+    margin-top: 35px;
+    background-color: #ff8b38;
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    transition: 0.8s;
+}
+.btn-submit:hover{
+    transition: 0.8s;
+    background-color: #ff9a52;
+    color: white;
+}
+/* *******************
+CONTACT SECTION END
+********************** */
+
+/* *******************
+FOOTER SECTION START
+********************** */
+.main-footer {
+    background-color: #000;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+.footer-social-links a:first-child {
+    margin-left: 0;
+}
+.footer-social-links a {
+    text-align: center;
+    color: #ccc;
+    transition: 0.8s;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    margin-left: 11px;
+}
+.footer-social-links a:hover{
+    color: #ff8b38;
+    transition: 0.8s;
+    transform: scale(1.3);
+}
+.footer-social-links a .fa {
+    font-size: 24px;
+    line-height: 30px;
+}
+.main-footer p {
+    font-size: 12px;
+    color: #fff;
+    opacity: .5;
+    margin-top: 2px;
+    margin-bottom: 0;
+}
+/* *******************
+FOOTER SECTION END
+********************** */
